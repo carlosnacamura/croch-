@@ -1,0 +1,14 @@
+* {
+    margin: 0;
+    padding: 0%;
+}
+html,body {
+    overflow-x: hidden !important;
+}
+.header_bottom {
+    background-image: url(imgs/header.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 120vh;
+}
