@@ -12,3 +12,8 @@ html,body {
     width: 100vw;
     height: 120vh;
 }
+.header_bottom h1{
+    font-family: "Incosolata", Consolas, monospace;
+    font-size: 4em;
+    color: #d7b94c;
+}
