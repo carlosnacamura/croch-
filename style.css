@@ -1,19 +1,66 @@
 * {
-    margin: 0;
-    padding: 0%;
+  margin: 0;
+  padding: 0%;
 }
-html,body {
-    overflow-x: hidden !important;
+html,
+body {
+  overflow-x: hidden !important;
 }
 .header_bottom {
-    background-image: url(imgs/header.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 100vw;
-    height: 120vh;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-attachment: fixed;
+  background-color: tomato;
 }
-.header_bottom h1{
-    font-family: "Incosolata", Consolas, monospace;
-    font-size: 4em;
-    color: #d7b94c;
+.header_bottom h1 {
+  font-family: "Incosolata", Consolas, monospace;
+  font-size: 4em;
+  color: white;
+}
+.header_bottom img {
+  position: relative;
+  bottom: 30%;
+}
+.ondas {
+  width: 100vw;
+  height: 100px;
+  position: absolute;
+  bottom: 0;
+  background-image: url(imgs/onda_header.png);
+  background-size: 1000px 100px;
+  animation: ondaMovimento 4s alternate linear infinite;
+}
+#onda1 {
+  z-index: 999;
+  opacity: 1;
+  background-position-x: 400px;
+}
+#onda2 {
+  z-index: 998;
+  opacity: 0.5;
+  background-position-x: 250px;
+}
+#onda3 {
+  z-index: 997;
+  opacity: 0.2;
+  background-position-x: 200px;
+}
+#onda4 {
+  z-index: 996;
+  opacity: 0.8;
+  background-position-x: 50px;
+}
+main p {
+    margin-top: 50px;
+}
+@keyframes ondaMovimento {
+    0% {
+        transform: translateY(0px);
+    }
+    100% {
+        transform: translateY(15px);
+    }
 }
