@@ -59,3 +59,12 @@ function animateCircles() {
 }
 
 animateCircles();
+const img_main = document.querySelector(".explication img")
+document.addEventListener("scroll",()=>{
+  const y = scrollY
+  if (y >= 400 && y <= 800){
+    img_main.style.filter = 'blur(0px)'
+  } else {
+    img_main.style.filter = 'blur(10px)'
+  }
+})
